@@ -23,8 +23,8 @@ const ENABLE_THINKING_MODE = false; // Set to true to enable chat_template_kwarg
 
 // Model mapping (adjust based on available NIM models)
 const MODEL_MAPPING = {
-  'kimi': 'kimi-k2.6',
-  'qwen': 'qwen/qwen3.5-397b-a17b',
+  'nvidia': 'nvidia/nemotron-3-ultra-550b-a55b',
+  'qwen': 'qwen/qwen3-next-80b-a3b-instruct',
   'deepseek-flash': 'deepseek-ai/deepseek-v4-flash',
   'deepseek': 'deepseek-ai/deepseek-v4-pro',
   'z.ai': 'z-ai/glm-5.2',
