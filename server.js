@@ -26,8 +26,8 @@ const MODEL_MAPPING = {
   'nvidia': 'nvidia/nemotron-3-ultra-550b-a55b',
   'min': 'minimaxai/minimax-m3',
   'nvidia1': 'nvidia/nemotron-3-super-120b-a12b',
-  'gpt': 'openai/gpt-oss-120b',
-  'z.ai': 'z-ai/glm-5.2',
+  'kimi': 'moonshotai/kimi-k3',
+  'deepseek': 'deepseek-ai/deepseek-v4-pro-0813',
   'stepfun': 'stepfun-ai/step-3.7-flash',
   'lama': 'meta/llama-3.3-70b-instruct' 
 };
