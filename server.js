@@ -25,11 +25,11 @@ const ENABLE_THINKING_MODE = false; // Set to true to enable chat_template_kwarg
 const MODEL_MAPPING = {
   'nvidia': 'nvidia/nemotron-3-ultra-550b-a55b',
   'min': 'minimaxai/minimax-m3',
-  'nvidia1': 'nvidia/nemotron-3-super-120b-a12b',
+  'laguna': 'poolside/laguna-xs-2.1',
   'kimi': 'moonshotai/kimi-k3',
   'deepseek': 'deepseek-ai/deepseek-v4-pro-0813',
-  'stepfun': 'stepfun-ai/step-3.7-flash',
-  'lama': 'meta/llama-3.3-70b-instruct' 
+  'flash': 'deepseek-ai/deepseek-v4-flash-0731',
+  'mis': 'mistralai/mistral-nemotron' 
 };
 
 // Health check endpoint
