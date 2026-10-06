@@ -27,7 +27,7 @@ const MODEL_MAPPING = {
   'z.ai': 'z-ai/glm-5.3',
   'z.flash': 'z-ai/glm-5.3-flash',
   'kimi': 'moonshotai/kimi-k3',
-  'deepseek': 'deepseek-ai/deepseek-v4-pro-0813',
+  'deepseek': 'deepseek-ai/deepseek-v4.1-flash',
   'flash': 'deepseek-ai/deepseek-v4-flash-0731',
   'mis': 'mistralai/mistral-nemotron' 
 };
