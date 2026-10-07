@@ -28,8 +28,8 @@ const MODEL_MAPPING = {
   'z.flash': 'z-ai/glm-5.3-flash',
   'kimi': 'moonshotai/kimi-k3',
   'ds': 'deepseek-ai/deepseek-v4.1-flash',
-  'flash': 'deepseek-ai/deepseek-v4-flash-0731',
-  'mis': 'mistralai/mistral-nemotron' 
+  'flash': 'deepseek-v4.1-flash',
+  'mis': 'deepseek-ai/deepseek-v4.1-flash' 
 };
 
 // Health check endpoint
