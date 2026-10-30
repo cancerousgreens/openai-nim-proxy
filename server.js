@@ -23,12 +23,12 @@ const ENABLE_THINKING_MODE = false; // Set to true to enable chat_template_kwarg
 
 // Model mapping (adjust based on available NIM models)
 const MODEL_MAPPING = {
-  'nvidia': 'nvidia/nemotron-3-ultra-550b-a55b',
-  'step': 'stepfun-ai/Step 5 Preview',
+  'nvidia': 'nvidia/nemotron-3.5-super-vl-120b-a12b',
+  'step': 'stepfun-ai/step-5-preview',
   'z.flash': 'z-ai/glm-5.3-flash',
   'kimi': 'moonshotai/kimi-k3',
   'deepseek': 'deepseek-ai/deepseek-v4.1-flash',
-  'flash': 'deepseek-v4.1-flash',
+  'mis': 'mistralai/mistral-large-4-1t-a52b',
   'min': 'minimaxai/minimax-m3.1-flash' 
 };
 
