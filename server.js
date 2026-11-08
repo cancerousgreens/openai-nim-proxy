@@ -26,7 +26,7 @@ const MODEL_MAPPING = {
   'nvidia': 'nvidia/nemotron-3.5-super-vl-120b-a12b',
   'step': 'stepfun-ai/step-5-preview',
   'z.flash': 'z-ai/glm-5.3-flash',
-  'kimi': 'moonshotai/kimi-k3',
+  'kimi': 'moonshotai/kimi-k3.1-pro',
   'deepseek': 'deepseek-ai/deepseek-v4.1-flash',
   'mis': 'mistralai/mistral-large-4-1t-a52b',
   'min': 'minimaxai/minimax-m3.1-flash' 
