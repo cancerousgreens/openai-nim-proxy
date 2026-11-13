@@ -4,6 +4,15 @@ const cors = require('cors');
 const axios = require('axios');
 
 const app = express();
+
+app.use((req, res, next) => {
+  console.log("================================");
+  console.log("METHOD:", req.method);
+  console.log("PATH:", req.originalUrl);
+  console.log("================================");
+  next();
+});
+
 const PORT = process.env.PORT || 3000;
 
 // Middleware
