@@ -222,8 +222,8 @@ app.post('/v1/chat/completions', async (req, res) => {
       
       res.json(openaiResponse);
     }
-    
-  } catch (error) {
+
+} catch (error) {
     console.error('========== NVIDIA DEBUG ==========');
 
     console.error('Error:', error.message);
@@ -255,16 +255,6 @@ app.post('/v1/chat/completions', async (req, res) => {
         }
     });
 }
-    
-    res.status(error.response?.status || 500).json({
-      error: {
-        message: error.message || 'Internal server error',
-        type: 'invalid_request_error',
-        code: error.response?.status || 500
-      }
-    });
-  }
-});
 
 // Catch-all for unsupported endpoints
 app.all('*', (req, res) => {
