@@ -224,7 +224,37 @@ app.post('/v1/chat/completions', async (req, res) => {
     }
     
   } catch (error) {
-    console.error('Proxy error:', error.message);
+    console.error('========== NVIDIA DEBUG ==========');
+
+    console.error('Error:', error.message);
+    console.error('Status:', error.response?.status);
+
+    console.error(
+        'NVIDIA response:',
+        JSON.stringify(error.response?.data)
+    );
+
+    console.error('Upstream URL:', error.config?.url);
+
+    console.error('Requested model:', req.body?.model);
+
+    console.error(
+        'Mapped NVIDIA model:',
+        MODEL_MAPPING[req.body?.model] || req.body?.model
+    );
+
+    console.error('==================================');
+
+    res.status(error.response?.status || 500).json({
+        error: {
+            message: error.response?.data?.error?.message ||
+                     error.message ||
+                     'Internal server error',
+            type: 'invalid_request_error',
+            code: error.response?.status || 500
+        }
+    });
+}
     
     res.status(error.response?.status || 500).json({
       error: {
